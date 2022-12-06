@@ -92,13 +92,14 @@ showActionSheet(){
         child: Column(children: [
           CupertinoButton(
               child: Text('Pilih Program Studi'),
-              onPressed: () {
+              onPressed:  () {
                 showActionSheet();
               }
               ),
               CupertinoButton(
               child: Text('Pilih Tanggal'),
-              onPressed: () {
+              onPressed:  () {
+                
                 _showDialog(
                   CupertinoDatePicker(onDateTimeChanged: (DateTime newDate){
                     setState(()=> date = newDate);
@@ -116,3 +117,7 @@ showActionSheet(){
     );
   }
 }
+
+
+
+
